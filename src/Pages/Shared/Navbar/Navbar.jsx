@@ -5,12 +5,12 @@ import logo from "../../../Assets/logo.png";
 const Navbar = () => {
   return (
     <div className="bg-info">
-      <div className="navbar w-11/12 md:w-10/12 mx-auto">
+      <div className="navbar w-11/12 md:w-10/12 mx-auto px-0">
         <div className="navbar-start">
 
             {/* Hidden for larger and medium devices */}
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn btn-ghost lg:hidden pl-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -44,14 +44,14 @@ const Navbar = () => {
           </div>
 
           {/* logo image */}
-          <a className="btn btn-ghost normal-case text-xl hover:bg-info">
+          <a className="btn btn-ghost normal-case text-xl hover:bg-info p-0">
             <img src={logo} alt="" className="w-24" />
           </a>
 
           {/* Hidden for smaller devices */}
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-0">
             <li>
               <a className="font-semibold nav_content">Home</a>
             </li>
