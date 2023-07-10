@@ -31,7 +31,7 @@ const WhyUs = () => {
   ];
 
   return (
-    <div className="pt-10">
+    <div className="bg-info pt-10">
       <div className="w-11/12 md:w-10/12 mx-auto">
         <div className=" md:w-4/6 lg:w-3/6 mx-auto">
           <h1 className="font-bold text-4xl text-neutral text-center py-4">
@@ -44,7 +44,7 @@ const WhyUs = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-2 md:pt-2 lg:pt-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-2 md:pt-2 lg:pt-0 py-20">
           {services &&
             services.map((service) => (
               <div key={service.id} className="lg:w-5/6">
