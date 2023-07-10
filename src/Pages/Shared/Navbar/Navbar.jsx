@@ -1,14 +1,14 @@
 import React from "react";
 import "./Navbar.css";
 import logo from "../../../Assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="bg-info">
       <div className="navbar w-11/12 md:w-10/12 mx-auto px-0">
         <div className="navbar-start">
-
-            {/* Hidden for larger and medium devices */}
+          {/* Hidden for larger and medium devices */}
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden pl-0">
               <svg
@@ -29,40 +29,56 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
               <li>
-                <a className="font-semibold nav_content">Home</a>
+                <Link to="/" className="font-semibold nav_content">
+                  Home
+                </Link>
               </li>
               <li>
-                <a className="font-semibold nav_content">About</a>
+                <Link to="/about" className="font-semibold nav_content">
+                  About
+                </Link>
               </li>
               <li>
-                <a className="font-semibold nav_content">Course</a>
+                <Link to="/course" className="font-semibold nav_content">
+                  Course
+                </Link>
               </li>
               <li>
-                <a className="font-semibold nav_content">Contact</a>
+                <Link to="/contact" className="font-semibold nav_content">
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
 
           {/* logo image */}
-          <a className="btn btn-ghost normal-case text-xl hover:bg-info p-0">
+          <Link to='/' className="btn btn-ghost normal-case text-xl hover:bg-info p-0">
             <img src={logo} alt="" className="w-24" />
-          </a>
+          </Link>
 
           {/* Hidden for smaller devices */}
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-0">
             <li>
-              <a className="font-semibold nav_content">Home</a>
+              <Link to="/" className="font-semibold nav_content">
+                Home
+              </Link>
             </li>
             <li>
-              <a className="font-semibold nav_content">About</a>
+              <Link to="/about" className="font-semibold nav_content">
+                About
+              </Link>
             </li>
             <li>
-              <a className="font-semibold nav_content">Course</a>
+              <Link to="/course" className="font-semibold nav_content">
+                Course
+              </Link>
             </li>
             <li>
-              <a className="font-semibold nav_content">Contact</a>
+              <Link to="/contact" className="font-semibold nav_content">
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -72,7 +88,9 @@ const Navbar = () => {
             <a className="text-primary text-base font-bold">Login</a>
           </button>
           <button className="bg-primary rounded-full px-7 py-1 md:py-2">
-            <a className="text-white text-base font-bold text-xs md:text-base">Sign Up</a>
+            <a className="text-white text-base font-bold text-xs md:text-base">
+              Sign Up
+            </a>
           </button>
         </div>
       </div>
