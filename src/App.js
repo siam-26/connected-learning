@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './Pages/Shared/Navbar/Navbar';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div className="max-w-[1450px] mx-auto">
+      <Navbar/>
     </div>
   );
 }
