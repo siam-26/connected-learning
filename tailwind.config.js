@@ -20,9 +20,9 @@ module.exports = {
 
           info: "#EDEEF3",
 
-          success: "#36D399",
+          success: "#E6E8F3",
 
-          warning: "#FBBD23",
+          warning: "#ECEEF5",
 
           error: "#F87272",
         },

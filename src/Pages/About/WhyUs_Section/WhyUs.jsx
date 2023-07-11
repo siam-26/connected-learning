@@ -33,7 +33,7 @@ const WhyUs = () => {
   return (
     <div className="bg-info pt-10">
       <div className="w-11/12 md:w-10/12 mx-auto">
-        <div className=" md:w-4/6 lg:w-3/6 mx-auto">
+        <div className=" md:w-4/6 lg:w-3/6 mx-auto md:pt-6 lg:pt-10 lg:pb-5">
           <h1 className="font-bold text-4xl text-neutral text-center py-4">
             Why Us?
           </h1>

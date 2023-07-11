@@ -3,7 +3,7 @@ import mission_Img from "../../../Assets/About/Our_Mission/ourMissionImg.png";
 
 const OurMission = () => {
   return (
-    <div className="hero w-11/12 md:w-10/12 mx-auto pt-10">
+    <div className="hero w-11/12 md:w-10/12 mx-auto pt-10 ">
       <div className="hero-content flex-col-reverse lg:flex-row-reverse lg:gap-28">
 
         <div className="relative">
