@@ -95,7 +95,7 @@ const OnlineCourses = () => {
     ]
   return (
     <div className="bg-info mt-10">
-      <div className="w-11/12 md:w-10/12 mx-auto py-5">
+      <div className="w-11/12 md:w-10/12 mx-auto pt-5 pb-16">
         <div className="lg:w-72 mx-auto pb-8">
           <small className="text-primary flex justify-center font-bold pb-1">
             Course List

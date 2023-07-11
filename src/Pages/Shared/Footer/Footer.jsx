@@ -8,7 +8,7 @@ import facebookImg from "../../../Assets/footer/facebook (8) 1.png";
 
 const Footer = () => {
   return (
-    <div className="flex md:hidden lg:flex w-10/12 mx-auto mt-12 lg:mt-24">
+    <div className="flex md:hidden lg:flex w-10/12 mx-auto ">
       <footer className="lg:footer text-center lg:text-left py-10">
         <div className="lg:w-72">
           <a

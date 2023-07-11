@@ -9,7 +9,7 @@ import facebookImg from "../../../Assets/footer/facebook (8) 1.png";
 const FooterMedium = () => {
   return (
     // Only for medium device
-    <div className="hidden md:flex lg:hidden w-10/12 mx-auto mt-24 ">
+    <div className="hidden md:flex lg:hidden w-10/12 mx-auto">
       <footer className="grid grid-cols-2 gap-x-24 gap-y-14 py-10">
         <div className="w-72">
           <a
