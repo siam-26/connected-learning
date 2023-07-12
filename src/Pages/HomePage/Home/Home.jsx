@@ -4,6 +4,7 @@ import HomepageImgSection from '../HomepageImgSection/HomepageImgSection';
 import BestDigitalCourses from '../BestDigitalCourses/BestDigitalCourses';
 import PerfectCourse from '../PerfectCourse/PerfectCourse';
 import PopularTeachers from '../PopularTeachers/PopularTeachers';
+import Categories from '../Categories/Categories';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <HomepageImgSection/>
             <BestDigitalCourses/>
             <PerfectCourse/>
+            <Categories/>
             <PopularTeachers/>
         </div>
     );
