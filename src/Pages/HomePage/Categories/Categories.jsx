@@ -15,6 +15,7 @@ const Categories = () => {
     {
       id: 1,
       img: development,
+      bg:"bg-info"
     },
     {
       id: 2,
@@ -26,6 +27,7 @@ const Categories = () => {
       img: software,
       subImg: circle,
       vectorImg: vector,
+      bg:"bg-primary"
     },
     {
       id: 4,
@@ -70,8 +72,8 @@ const Categories = () => {
               <>
                 {category.name ? (
                   <div key={category.id} className="bg-info rounded-md">
-                    <div className="pt-8">
-                      <img src={category.img} alt="" className="w-11 mx-auto" />
+                    <div className="pt-7 md:pt-8">
+                      <img src={category.img} alt="" className="w-8 md:w-11 mx-auto" />
                     </div>
 
                     <div className="text-center pt-3 lg:pt-6 pb-8">
@@ -81,9 +83,9 @@ const Categories = () => {
                     </div>
                   </div>
                 ) : (
-                  <div key={category.id} className="bg-info">
+                  <div key={category.id} className={`${category.bg} rounded-md`}>
                     <div className="relative">
-                      <img src={category.img} alt="" className="object-scale-down" />
+                      <img src={category.img} alt="" className="" />
                       <div className="absolute top-6 right-10 md:right-12 lg:right-14">
                         <img
                           src={category.subImg && category.subImg}
@@ -98,7 +100,7 @@ const Categories = () => {
                           className="w-4 md:w-6"
                         />
                       </div>
-                      <div className="absolute bottom-0 -right-2">
+                      <div className="absolute -bottom-2 md:bottom-0 -right-2">
                         <img
                           src={category.vectorImg && category.vectorImg}
                           alt=""
@@ -110,200 +112,6 @@ const Categories = () => {
                 )}
               </>
             ))}
-          {/* {categories &&
-            categories.map((category) => {
-              category.name ? (
-                
-                  <div className="bg-info rounded-md">
-                    <div className="pt-8">
-                      <img src={category.img} alt="" className="w-11 mx-auto" />
-                    </div>
-
-                    <div className="text-center pt-3 lg:pt-6 pb-8">
-                      <p className="font-bold font-sans text-xs md:text-base lg:text-lg text-neutral">
-                        {category.name}
-                      </p>
-                    </div>
-                  </div>
-                
-              ) : (
-                <>
-                  {category.subImg ? (
-                    <>
-                      <div className="bg-info ">
-                        <div className="relative">
-                          <img src={category.img} alt="" className="" />
-                          <div className="absolute top-6 right-10 md:right-12 lg:right-14">
-                            <img src={category.subImg} alt="" className="w-2 md:w-3" />
-                          </div>
-                          <div className="absolute top-10 md:top-11 lg:top-12 right-12 md:right-14 right-16">
-                            <img src={category.subImg} alt="" className="w-4 md:w-6" />
-                          </div>
-                          <div className="absolute bottom-0 -right-2">
-                            <img
-                              src={category.vectorImg}
-                              alt=""
-                              className="w-10 md:w-12 lg:w-14"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </>
-                  ) : (
-                    <>
-                      <div className="bg-info">
-                        <div className="">
-                          <img src={category.img} alt="" className="" />
-                        </div>
-                      </div>
-                    </>
-                  )}
-                </>
-              );
-            })} */}
-
-          {/* <div className="bg-info rounded-md">
-            <div className="pt-8">
-              <img src={development} alt="" className="w-11 mx-auto" />
-            </div>
-
-            <div className="text-center pt-3 lg:pt-6 pb-8">
-              <p className="font-bold font-sans text-xs md:text-base lg:text-lg text-neutral">
-                Development
-              </p>
-            </div>
-          </div> */}
-
-          {/* dgsdg */}
-          {/* <div className="bg-info  rounded-md">
-            <div className="pt-8">
-              <img src={development} alt="" className="w-11 mx-auto" />
-            </div>
-
-            <div className="text-center pt-3 lg:pt-6 pb-8">
-              <p className="font-bold font-sans text-xs md:text-base text-neutral">
-                Development
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-info ">
-            <div className="relative">
-              <img src={software} alt="" className="" />
-              <div className="absolute top-6 right-10 md:right-12 lg:right-14">
-                <img src={circle} alt="" className="w-2 md:w-3" />
-              </div>
-              <div className="absolute top-10 md:top-11 lg:top-12 right-12 md:right-14 right-16">
-                <img src={circle} alt="" className="w-4 md:w-6" />
-              </div>
-              <div className="absolute bottom-0 -right-2">
-                <img src={vector} alt="" className="w-10 md:w-12 lg:w-14" />
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-info">
-            <div className="">
-              <img src={developmentt} alt="" className="" />
-            </div>
-          </div>
-
-          <div className="bg-info  rounded-md">
-            <div className="pt-8">
-              <img src={development} alt="" className="w-11 mx-auto" />
-            </div>
-
-            <div className="text-center pt-3 lg:pt-6 pb-8">
-              <p className="font-bold font-sans text-xs md:text-normal text-neutral">
-                Development
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-info  rounded-md">
-            <div className="pt-8">
-              <img src={development} alt="" className="w-11 mx-auto" />
-            </div>
-
-            <div className="text-center pt-3 lg:pt-6 pb-8">
-              <p className="font-bold font-sans text-xs md:text-normal text-neutral">
-                Development
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-info  rounded-md">
-            <div className="pt-8">
-              <img src={development} alt="" className="w-11 mx-auto" />
-            </div>
-
-            <div className="text-center pt-3 lg:pt-6 pb-8">
-              <p className="font-bold font-sans text-xs md:text-normal text-neutral">
-                Development
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-info  rounded-md">
-            <div className="pt-8">
-              <img src={development} alt="" className="w-11 mx-auto" />
-            </div>
-
-            <div className="text-center pt-3 lg:pt-6 pb-8">
-              <p className="font-bold font-sans text-xs md:text-normal text-neutral">
-                Development
-              </p>
-            </div>
-          </div> */}
-          {/* <div className="bg-info">
-                <div>
-                    <img src={development} alt=""/>
-                </div>
-
-                <div>
-                    <p>Development</p>
-                </div>
-            </div>
-
-            <div className="bg-info">
-                <div>
-                    <img src={development} alt=""/>
-                </div>
-
-                <div>
-                    <p>Development</p>
-                </div>
-            </div>
-
-            <div className="bg-info">
-                <div>
-                    <img src={development} alt=""/>
-                </div>
-
-                <div>
-                    <p>Development</p>
-                </div>
-            </div>
-
-            <div className="bg-info">
-                <div>
-                    <img src={development} alt=""/>
-                </div>
-
-                <div>
-                    <p>Development</p>
-                </div>
-            </div>
-
-            <div className="bg-info">
-                <div>
-                    <img src={development} alt=""/>
-                </div>
-
-                <div>
-                    <p>Development</p>
-                </div>
-            </div> */}
         </div>
       </div>
     </div>

@@ -5,6 +5,7 @@ import BestDigitalCourses from '../BestDigitalCourses/BestDigitalCourses';
 import PerfectCourse from '../PerfectCourse/PerfectCourse';
 import PopularTeachers from '../PopularTeachers/PopularTeachers';
 import Categories from '../Categories/Categories';
+import What_they_say from '../What_they_say/What_they_say';
 
 const Home = () => {
     return (
@@ -15,6 +16,7 @@ const Home = () => {
             <PerfectCourse/>
             <Categories/>
             <PopularTeachers/>
+            <What_they_say/>
         </div>
     );
 };
